@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>MostlyPostly SMS Consent</title>
-  <meta name="description" content="SMS consent disclosure for MostlyPostly, the AI assistant for salon teams." />
+  <title>MostlyPostly SMS Consent — Rejuve Salon Spa LLC</title>
+  <meta name="description" content="SMS consent disclosure for Rejuve Salon Spa LLC, administered via MostlyPostly." />
   <style>
     :root {
       --bg: #0b0c10;
@@ -127,6 +127,7 @@
       MostlyPostly
     </a>
     <h1>MostlyPostly SMS Consent</h1>
+    <p><strong>Rejuve Salon Spa LLC</strong> — SMS Program administered via MostlyPostly</p>
     <div class="subtle">Effective Date: October 2025 • Last Updated: October 2025</div>
   </header>
 
@@ -171,15 +172,25 @@
         <p>For details, see our SMS Consent, Privacy Policy, and Terms:</p>
         <ul>
           <li>SMS Consent (this page)</li>
-          <li>Privacy: <a href="#" id="privacy-link" rel="nofollow noopener">Add your privacy URL</a></li>
-          <li>Terms: <a href="#" id="terms-link" rel="nofollow noopener">Add your terms URL</a></li>
+          <li>Privacy:
+            <a href="https://mostlypostly.github.io/mostlypostly-legal/privacy.html"
+               id="privacy-link" rel="nofollow noopener">
+               https://mostlypostly.github.io/mostlypostly-legal/privacy.html
+            </a>
+          </li>
+          <li>Terms:
+            <a href="https://mostlypostly.github.io/mostlypostly-legal/terms.html"
+               id="terms-link" rel="nofollow noopener">
+               https://mostlypostly.github.io/mostlypostly-legal/terms.html
+            </a>
+          </li>
         </ul>
       </section>
     </div>
 
     <section id="opt-in">
       <h2>Opt-In</h2>
-      <p>Before using MostlyPostly messaging, review the links above and reply “AGREE” (or “YES”) to consent to automated SMS for approvals, previews, and related operational updates. Msg &amp; data rates may apply. Consent is not a condition of purchase.</p>
+      <p>By providing your mobile number or replying “AGREE” (or “YES”) via text, you consent to receive automated SMS from Rejuve Salon Spa LLC through the MostlyPostly platform for post approvals, previews, and related operational updates. Msg &amp; data rates may apply. Consent is not a condition of purchase.</p>
     </section>
 
     <section id="opt-out">
@@ -193,26 +204,18 @@
 
     <section id="contact">
       <h2>Contact</h2>
-      <p><strong>MostlyPostly — AI Communications Platform for Salon Teams</strong><br/>
+      <p><strong>Rejuve Salon Spa LLC — SMS Program via MostlyPostly</strong><br/>
          <a href="mailto:support@rejuvesalonspa.com">support@rejuvesalonspa.com</a> • Carmel, Indiana
       </p>
     </section>
   </main>
 
   <footer>
-    © <span id="year"></span> MostlyPostly • SMS Consent
+    © <span id="year"></span> Rejuve Salon Spa LLC • MostlyPostly SMS Consent
   </footer>
 
   <script>
-    // simple year updater
     document.getElementById('year').textContent = new Date().getFullYear();
-    // optional: replace placeholders easily if you set window.POLICY_LINKS before load
-    (function applyLinks() {
-      if (!window.POLICY_LINKS) return;
-      const { privacy, terms } = window.POLICY_LINKS;
-      if (privacy) { const a = document.getElementById('privacy-link'); a.href = privacy; a.textContent = privacy; }
-      if (terms)   { const a = document.getElementById('terms-link'); a.href = terms; a.textContent = terms; }
-    })();
   </script>
 </body>
 </html>
